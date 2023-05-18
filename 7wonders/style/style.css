@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image img {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: auto;
+    padding: 5rem;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.856);
+    /* Adjust the opacity and color as desired */
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    padding: 1rem;
+    height: 60px;
+    /* Adjust the height as per your logo's dimensions */
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 5rem;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.centered-content {
+    font-size: 180%;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered-content button {
+    margin-top: 5rem;
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 60%;
+    padding: 1.5rem;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.808);
+    border-radius: 2rem;
+}
+
+hr {
+    width: 15%;
+    height: 3px;
+    background-color: #000;
+    margin-bottom: 1rem;
+}
+
+.container {
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+}
+
+.title {
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace bold;
+    margin-bottom: 2rem;
+}
+
+.container p {
+    font-size: 25px;
+    padding: 1rem;
+}
+
+.paragraph-with-image {
+    display: flex;
+}
+
+.paragraph-with-image p {
+    flex: 1;
+}
+
+.paragraph-with-image img {
+    margin-left: 10px;
+    /* Adjust the margin as desired */
+}
+
+.image-grid {
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 150px;
+}
+
+.image-grid img {
+    height: 50%;
+    margin-top: 5rem;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.808);
+}
+
+.image-grid a {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+
+.image-grid a.center-image {
+    grid-column: 1 / span 2;
+}
